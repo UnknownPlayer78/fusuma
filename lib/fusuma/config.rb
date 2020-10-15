@@ -59,7 +59,7 @@ module Fusuma
 
       yaml = YAML.load_file(path)
 
-      raise InvalidFileError, 'Invaid YAML file' unless yaml.is_a? Hash
+      raise InvalidFileError, 'Invalid YAML file' unless yaml.is_a? Hash
 
       yaml.deep_symbolize_keys
     rescue StandardError => e
